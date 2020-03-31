@@ -1,10 +1,12 @@
 1. 검색조건 설정
   open url http://www.g2b.go.kr/gov/koneps/pt/helpmsg/menu/frameTop.js?1583844634984
-  1)공종선택
+ 
+ 1)공종선택
   click industry button > popup window
   input industry code - landscape architeture(0005), civil enginieering(0001)
   click search
   select 0001 or 0005
+  
   2)지역선택
   click area
   select 서울
