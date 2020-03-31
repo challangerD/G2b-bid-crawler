@@ -7,5 +7,5 @@ def industry ():
     driver.get(url)
     time.sleep(5)
     industry_search = driver.find_element_by_class_name('f1').find_element_by_class_name('btn_finder')
-    industry_search.excute_script('script')
-industry()
+    industry_search.click()
+#industry()
