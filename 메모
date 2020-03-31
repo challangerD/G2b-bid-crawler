@@ -1,0 +1,30 @@
+1. 검색조건 설정
+  open url http://www.g2b.go.kr/gov/koneps/pt/helpmsg/menu/frameTop.js?1583844634984
+  1)공종선택
+  click industry button > popup window
+  input industry code - landscape architeture(0005), civil enginieering(0001)
+  click search
+  select 0001 or 0005
+  2)지역선택
+  click area
+  select 서울
+
+  3)기간
+  noticedate에 오늘날짜 입력
+
+  4)검색
+
+2. 데이터 긁기
+    검색결과 클릭
+    필요한 데이터
+    : 공고번호, 발주처, 공고명, 계약방법, 해당 공종, 입찰마감시간, 개찰시간, 기초금액
+    #만약 기초금액이 페이지 내에 없으면 한글파일에서 찾아야 함
+
+3.데이터 엑셀에 정리
+  1)투찰금액 파일
+  발주처, 공사명, 입찰마감, 개찰시간, 기초금액 순서대로 열 구성
+  #행 정렬 기준 
+    (1)입찰마감시간-빠른 날짜가 위로
+    (2)공고가 올라온 순서
+    
+  2)입찰대장
