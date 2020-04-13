@@ -11,11 +11,9 @@ def industry():
     i_search.send_key('0001')
 
 def area():
-    a_search = driver.find_element_by_id('area')
-    for option in a_search.find_elements_by_tag_name('option')
-        if option.text == '서울'
-            option.click()
-            break
+    a = driver.find_element_by_id('area')
+    a_remove_onchange = driver.excute_script('arguments[0].removeAttribute("onchange")',a)
+    a_remove_onchange.send_keys('11')
 
 def click_search():
     Search = driver.find_element_by_xpath('//div[@class="button4"]/a[@class="btn_mdl",contains(text(),"검색")]')
