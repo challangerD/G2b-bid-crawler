@@ -11,12 +11,11 @@ def industry():
     i_search.send_key('0001')
 
 def area():
-    a = driver.find_element_by_id('area')
-    a_remove_onchange = driver.excute_script('arguments[0].removeAttribute("onchange")',a)
-    a_remove_onchange.send_keys('11')
+    a = driver.find_element_by_xpath('//*[@id="area"]')
+    a.select_by_value('11')
 
 def click_search():
-    Search = driver.find_element_by_xpath('//div[@class="button4"]/a[@class="btn_mdl",contains(text(),"검색")]')
+    Search = driver.find_element_by_xpath('//*[@id="buttonwrap"]/div/a[1]/span')
     Search.click()
 
 industry()
