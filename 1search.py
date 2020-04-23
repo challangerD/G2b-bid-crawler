@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 driver = webdriver.Chrome('c:/users/chromedriver.exe')
 
-#검색기간설정,2020%2F04%2F15
+#검색기간3일
 ToD = datetime.today().strftime('%Y%m%d')
 d = datetime.timedelta(days = 3)
 FromD = ToD - d
