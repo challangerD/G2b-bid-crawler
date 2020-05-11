@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 driver = webdriver.Chrome('c:/users/chromedriver.exe')
 
 #검색기간3일
-ToD = datetime.today().strftime('%Y%m%d')
+ToD = datetime.today().strftime('%Y%m%d')#NameError: name 'date' is not defined????
 d = datetime.timedelta(days = 3)
 FromD = ToD - d
 
